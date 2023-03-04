@@ -41,7 +41,7 @@ public class Playermouvement : MonoBehaviour
             Velocity.y = -2f;
         }
         float moveZ = Input.GetAxis("Vertical");
-        Direction = new Vector3(0, 1, moveZ);
+        Direction = new Vector3(0, 0, moveZ);
         Direction = transform.TransformDirection(Direction);
 
         if (IsGrounded)
