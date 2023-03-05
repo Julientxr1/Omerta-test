@@ -73,17 +73,17 @@ public class Playermouvement : MonoBehaviour
 
     private void Idle()
     {
-        anim.SetFloat("Blend",0,0.1f,Time.deltaTime);
+        anim.SetFloat("Speed",0,0.1f,Time.deltaTime);
     }
     private void Walk()
     {
         Movespeed = Walkspeed;
-        anim.SetFloat("Blend",0.5f,0.1f,Time.deltaTime);
+        anim.SetFloat("Speed",0.5f,0.1f,Time.deltaTime);
     }
     private void Run()
     {
         Movespeed = Runspeed;
-        anim.SetFloat("Blend",1,0.1f,Time.deltaTime);
+        anim.SetFloat("Speed",1,0.1f,Time.deltaTime);
     }
 
     private void Jump()
