@@ -31,6 +31,10 @@ public class Playermouvement : MonoBehaviour
     private void Update()
     {
         Move();
+        if (Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            Attack();
+        }
     }
 
     private void Move()
@@ -89,5 +93,10 @@ public class Playermouvement : MonoBehaviour
     private void Jump()
     {
         Velocity.y = Mathf.Sqrt(JumpHeight * -2 * gravity);
+    }
+
+    private void Attack()
+    {
+        anim.SetTrigger("Attack");
     }
 }
