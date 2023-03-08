@@ -29,14 +29,13 @@ public class Alternativemove : MonoBehaviour
         float verticalinput = Input.GetAxis("Vertical");
         Vector3 direction = new Vector3(horizontalinput, 0, verticalinput);
         float inputpress = Mathf.Clamp01(direction.magnitude);
-        float magnitude =inputpress * speed; 
+        float magnitude =inputpress * (speed *1.2f); 
         direction.Normalize();
         Controller.SimpleMove(direction * magnitude);
         gravity += Physics.gravity.y * Time.deltaTime;
         if (Input.GetKey(KeyCode.LeftShift))
         {
             inputpress /= 2;
-            
         }
         Animator.SetFloat("speed",inputpress,0.05f,Time.deltaTime);
         if (Controller.isGrounded)
