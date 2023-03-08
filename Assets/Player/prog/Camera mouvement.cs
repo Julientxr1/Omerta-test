@@ -8,23 +8,19 @@ using Cursor = UnityEngine.Cursor;
 
 public class Cameramouvement : MonoBehaviour
 {
-    [SerializeField] private float mouseSensitivity;
-    private Transform parent;
+    public float sensi = 100;
 
-    private void Start()
+    private void Update()
     {
-        parent = transform.parent;
-        Cursor.lockState = CursorLockMode.Locked;
-    }
+        if (Input.GetAxis("Mouse X")<0)
+        {
+            transform.Rotate(0, -sensi * Time.deltaTime,0);
 
-    void Update()
-    {
-        Rotate();
-    }
+        }
+        if (Input.GetAxis("Mouse X")>0)
+        {
+            transform.Rotate(0, sensi * Time.deltaTime,0);
 
-    private void Rotate()
-    {
-        float mousex = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
-        parent.Rotate(Vector3.up,mousex);
+        }
     }
 }

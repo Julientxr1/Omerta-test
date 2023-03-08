@@ -1,70 +1,59 @@
 
 
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Alternativemove : MonoBehaviour
 {
-    public CharacterController Controller;
-    public Animator Animator;
-    [Header("Mouvement")] 
-    public float speed = 1f;
-    public float gravity = -9.10f;
-    public float jumpHeight = 1f;
-    [Header("Ground Check")] 
-    public Transform ground_check;
-    public float ground_distance=0.4f;
-    public LayerMask ground_mask;
+    public float speed;
+    public float rotaspeed;
+    private CharacterController Controller;
+    public float jumpspeed;
+    private float gravity;
+    private float orginal;
 
-    private Vector3 direction;
-    private bool isGround;
-    void Start()
+
+    private void Start()
     {
-        
+        Controller = GetComponent<CharacterController>();
+        orginal = Controller.stepOffset;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        isGround = Physics.CheckSphere(ground_check.position, ground_distance, ground_mask);
-        if (isGround && direction.y<0)
+        float horizontalinput = Input.GetAxis("Horizontal");
+        float verticalinput = Input.GetAxis("Vertical");
+        Vector3 direction = new Vector3(horizontalinput, 0, verticalinput);
+        float magnitude = Mathf.Clamp01(direction.magnitude) * speed; 
+        direction.Normalize();
+        Controller.SimpleMove(direction * magnitude);
+        gravity += Physics.gravity.y * Time.deltaTime;
+        if (Controller.isGrounded)
         {
-            direction.y = -2f;
-        }
+            Controller.stepOffset = orginal;
+            gravity = -0.5f;
+            if (Input.GetButtonDown("Jump"))
+            {
+                gravity = jumpspeed;
+            }
 
-        float x = Input.GetAxis("Horizontal");
-        float z = Input.GetAxis("Vertical");
-        Animator.SetFloat("foward",z);
-        Animator.SetFloat("strafe",x);
-        Vector3 movement = transform.right * x + transform.forward * z;
-
-        Controller.Move(movement * (speed * Time.deltaTime));
-        if (Input.GetKey(KeyCode.LeftShift))
-        {
-            speed = 3f;
-            Animator.SetBool("run",true);
         }
         else
         {
-            Animator.SetBool("run",false);
+            Controller.stepOffset = 0;
         }
-        if (Input.GetButtonDown("Jump") && isGround)
-        {
-            direction.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
-            
-        }
+        
+        Vector3 velocity = direction * magnitude;
+        velocity.y = gravity;
+        Controller.Move(velocity * Time.deltaTime);
 
-        if (isGround)
+        if (direction!= Vector3.zero)
         {
-            Animator.SetBool("jump", false);
+            Quaternion rota = Quaternion.LookRotation(direction, Vector3.up);
+            transform.rotation = 
+                Quaternion.RotateTowards(transform.rotation, rota, rotaspeed * Time.deltaTime);
         }
-        else
-        {
-            Animator.SetBool("jump",true);
-        }
-
-        direction.y += gravity * Time.deltaTime;
-        Controller.Move(direction * Time.deltaTime);
     }
 }
