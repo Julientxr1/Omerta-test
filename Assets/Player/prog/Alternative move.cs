@@ -13,12 +13,14 @@ public class Alternativemove : MonoBehaviour
     public float jumpspeed;
     private float gravity;
     private float orginal;
+    private Animator Animator;
 
 
     private void Start()
     {
         Controller = GetComponent<CharacterController>();
         orginal = Controller.stepOffset;
+        Animator = GetComponent<Animator>();
     }
 
     private void Update()
@@ -26,10 +28,17 @@ public class Alternativemove : MonoBehaviour
         float horizontalinput = Input.GetAxis("Horizontal");
         float verticalinput = Input.GetAxis("Vertical");
         Vector3 direction = new Vector3(horizontalinput, 0, verticalinput);
-        float magnitude = Mathf.Clamp01(direction.magnitude) * speed; 
+        float inputpress = Mathf.Clamp01(direction.magnitude);
+        float magnitude =inputpress * speed; 
         direction.Normalize();
         Controller.SimpleMove(direction * magnitude);
         gravity += Physics.gravity.y * Time.deltaTime;
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            inputpress /= 2;
+            
+        }
+        Animator.SetFloat("speed",inputpress,0.05f,Time.deltaTime);
         if (Controller.isGrounded)
         {
             Controller.stepOffset = orginal;
@@ -52,8 +61,13 @@ public class Alternativemove : MonoBehaviour
         if (direction!= Vector3.zero)
         {
             Quaternion rota = Quaternion.LookRotation(direction, Vector3.up);
+            Animator.SetBool("running",true);
             transform.rotation = 
                 Quaternion.RotateTowards(transform.rotation, rota, rotaspeed * Time.deltaTime);
+        }
+        else
+        {
+            Animator.SetBool("running",false);
         }
     }
 }
