@@ -57,16 +57,6 @@ public class Alternativemove : MonoBehaviour
         velocity.y = gravity;
         Controller.Move(velocity * Time.deltaTime);
 
-        if (direction!= Vector3.zero)
-        {
-            Quaternion rota = Quaternion.LookRotation(direction, Vector3.up);
-            Animator.SetBool("running",true);
-            transform.rotation = 
-                Quaternion.RotateTowards(transform.rotation, rota, rotaspeed * Time.deltaTime);
-        }
-        else
-        {
-            Animator.SetBool("running",false);
-        }
+  
     }
 }

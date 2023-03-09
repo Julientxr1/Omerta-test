@@ -1,39 +1,9 @@
 fileFormatVersion: 2
-guid: 97eeb389b71b27649a232e1f5f001c44
+guid: 75ccd986fa507ff489e1247695bb322d
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Ch33_1001_Diffuse
-    second: {fileID: 2800000, guid: e9f3b27c9b9a3fd48b036f002881a8fa, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Ch33_1001_Glossiness
-    second: {fileID: 2800000, guid: 1d795e18e255deb4b9acb715181ee3ad, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Ch33_1001_Normal
-    second: {fileID: 2800000, guid: 176278cf5aaba2a4fbb3bb74ec9245db, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Ch33_1001_Specular
-    second: {fileID: 2800000, guid: 8e66ab75029c751459b999dd3584e3ca, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Ch33_1002_Diffuse
-    second: {fileID: 2800000, guid: 71912c119177f164f95b7da2763166c6, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Ch33_1002_Normal
-    second: {fileID: 2800000, guid: 3a3640bfc7d1b544197a69374a710576, type: 3}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -106,15 +76,7 @@ ModelImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
-  referencedClips:
-  - 516cc19727705094a8da7a72e1073730
-  - 9c1b92be3bf8f854bad475f6d61fa7eb
-  - 8488ae55c62b53c459a28a44c51086d0
-  - 3f353d6375632244594fb7d20774c477
-  - 7f57f9b68b3973344ae01384663aad98
-  - af0aaca5098c5304b9ebfc7c80260d7f
-  - 75ccd986fa507ff489e1247695bb322d
-  - bb523a3658715c549864b39b50c5b287
+  referencedClips: []
   importAnimation: 1
   humanDescription:
     serializedVersion: 3
