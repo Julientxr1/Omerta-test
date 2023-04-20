@@ -17,7 +17,7 @@ public class Player_stat : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.A))
+        if (Input.GetKeyDown(KeyCode.Q))
         {
             TakeDamage(15);
         }
@@ -26,6 +26,8 @@ public class Player_stat : MonoBehaviour
         {
             Animator.SetBool("IsDead",true);
         }
+
+        
     }
 
     void TakeDamage(float dmg)

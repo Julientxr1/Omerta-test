@@ -15,6 +15,8 @@ public class Cameramouvement : MonoBehaviour
     public float lookSpeed = 2.0f;
     public float lookXLimit = 60.0f;
     
+    
+    
 
     CharacterController characterController;
     Vector3 moveDirection = Vector3.zero;
@@ -29,9 +31,11 @@ public class Cameramouvement : MonoBehaviour
         characterController = GetComponent<CharacterController>();
         rotation.y = transform.eulerAngles.y;
     }
+    
 
     void Update()
     {
+        
         if (characterController.isGrounded)
         {
             // We are grounded, so recalculate move direction based on axes
@@ -54,6 +58,7 @@ public class Cameramouvement : MonoBehaviour
             {
                 moveDirection.y = jumpSpeed;
             }
+            
            
         }
 
