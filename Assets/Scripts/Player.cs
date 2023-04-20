@@ -1,8 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
 
-public class Player : MonoBehaviour
+public class Player : MonoBehaviourPunCallbacks
 {
     public int Health;
     public float Speed;
@@ -16,6 +15,14 @@ public class Player : MonoBehaviour
         Damage = damage;
         isAlive = health >= 0;
     }
-    
-    
+
+    void Update()
+    {
+        if (photonView.IsMine)
+        {
+            float x = Input.GetAxis("Horizontal");
+            float z = Input.GetAxis("Vertical");
+            transform.Translate(x, 0 ,z);
+        }
+    }
 }
