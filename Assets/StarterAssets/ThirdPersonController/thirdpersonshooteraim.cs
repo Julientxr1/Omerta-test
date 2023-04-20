@@ -18,6 +18,10 @@ public class thirdpersonshooteraim : MonoBehaviour
     [SerializeField] private Transform Debugtransform;
     [SerializeField] private Transform vfxHitGreen;
     [SerializeField] private Transform vfxHitRed;
+    [SerializeField] private Transform bulletPrefab;
+    [SerializeField]private Transform bulletSpawnPoint;
+
+    [SerializeField] float bulletSpeed;
     private Animator Animator;
 
     private void Awake()
@@ -59,18 +63,8 @@ public class thirdpersonshooteraim : MonoBehaviour
 
         if (StarterAssetsInputs.shoot)
         {
-            
-            if (hitTransform!=null)
-            {
-                if (hitTransform.GetComponent<BulletTarget>()!=null)
-                {
-                    Instantiate(vfxHitGreen, transform.position, Quaternion.identity);
-                }
-                else
-                {
-                    Instantiate(vfxHitRed, transform.position, quaternion.identity);
-                }
-            }
+            Vector3 aimdir = (mouseWroldPos - bulletSpawnPoint.position).normalized;
+            Instantiate(bulletPrefab, bulletSpawnPoint.position, Quaternion.LookRotation(aimdir,Vector3.up));
             StarterAssetsInputs.shoot = false;
         }
 
