@@ -16,8 +16,6 @@ public class thirdpersonshooteraim : MonoBehaviour
     private ThirdPersonController ThirdPersonController;
     [SerializeField] private LayerMask AimColliderLayerMask = new LayerMask();
     [SerializeField] private Transform Debugtransform;
-    [SerializeField] private Transform vfxHitGreen;
-    [SerializeField] private Transform vfxHitRed;
     [SerializeField] private Transform bulletPrefab;
     [SerializeField]private Transform bulletSpawnPoint;
 
@@ -53,6 +51,12 @@ public class thirdpersonshooteraim : MonoBehaviour
             Vector3 aimdir = (worldAimtarger - transform.position).normalized;
             transform.forward = Vector3.Lerp(transform.forward, aimdir, Time.deltaTime * 20f);
         }
+        else if (StarterAssetsInputs.shoot)
+        {
+            Vector3 aimdir = (mouseWroldPos - bulletSpawnPoint.position).normalized;
+            Instantiate(bulletPrefab, bulletSpawnPoint.position, Quaternion.LookRotation(aimdir, Vector3.up));
+            StarterAssetsInputs.shoot = false;
+        }
         else
         {
             AimVirtualCamera.gameObject.SetActive(false);
@@ -61,12 +65,7 @@ public class thirdpersonshooteraim : MonoBehaviour
             Animator.SetLayerWeight(1,Mathf.Lerp(Animator.GetLayerWeight(1),0f,Time.deltaTime*10f));
         }
 
-        if (StarterAssetsInputs.shoot)
-        {
-            Vector3 aimdir = (mouseWroldPos - bulletSpawnPoint.position).normalized;
-            Instantiate(bulletPrefab, bulletSpawnPoint.position, Quaternion.LookRotation(aimdir,Vector3.up));
-            StarterAssetsInputs.shoot = false;
-        }
+        
 
         
     }
