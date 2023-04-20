@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4702fa05-6f0f-49b1-bd31-4bc6c6549117" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Omerta-test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Omerta-test/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NZ PT-9M Pistol/Prefabs/PT-9M Pistol 9mm Bullet_Low.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NZ PT-9M Pistol/Prefabs/PT-9M Pistol 9mm Bullet_Low.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Sample.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Sample.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/thirdpersonshooteraim.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/thirdpersonshooteraim.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" afterDir="false" />
-    </list>
+    <list default="true" id="4702fa05-6f0f-49b1-bd31-4bc6c6549117" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -121,6 +113,7 @@
       <workItem from="1681994550871" duration="834000" />
       <workItem from="1681995485622" duration="93000" />
       <workItem from="1682021198979" duration="2172000" />
+      <workItem from="1682033057495" duration="394000" />
     </task>
     <servers />
   </component>
