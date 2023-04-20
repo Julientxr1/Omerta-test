@@ -3,25 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="4702fa05-6f0f-49b1-bd31-4bc6c6549117" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Omerta-test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Omerta-test/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Nouveau/Scripts/AimStates/AimStateManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Nouveau/Scripts/AimStates/AimStateManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Nouveau/Scripts/MovementStates/JumpState.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Nouveau/Scripts/MovementStates/JumpState.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Nouveau/Scripts/MovementStates/MovementBaseState.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Nouveau/Scripts/MovementStates/MovementBaseState.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Nouveau/Scripts/MovementStates/MovementStateManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Nouveau/Scripts/MovementStates/MovementStateManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Nouveau/Scripts/MovementStates/States.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Nouveau/Scripts/MovementStates/States/CrouchState.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Nouveau/Scripts/MovementStates/States/CrouchState.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Nouveau/Scripts/MovementStates/States/IdleState.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Nouveau/Scripts/MovementStates/States/IdleState.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Nouveau/Scripts/MovementStates/States/RunState.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Nouveau/Scripts/MovementStates/States/RunState.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Nouveau/Scripts/MovementStates/States/WalkState.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Nouveau/Scripts/MovementStates/States/WalkState.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Nouveau/Scripts/Weapons/WeaponBloom.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Nouveau/Scripts/Weapons/WeaponBloom.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Nouveau/Scripts/Weapons/WeaponManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Nouveau/Scripts/Weapons/WeaponManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/InputSystem/StarterAssets.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StarterAssets/InputSystem/StarterAssets.inputactions" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/InputSystem/StarterAssetsInputs.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StarterAssets/InputSystem/StarterAssetsInputs.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Character/Animations/StarterAssetsThirdPerson.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Character/Animations/StarterAssetsThirdPerson.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Scripts/ThirdPersonController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Scripts/ThirdPersonController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,22 +27,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Discover.Launch.Via.Unity": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Discover.Launch.Via.Unity&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "C:\\Users\\jugur\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\DecompilerCache",
-      "C:\\Users\\jugur\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\SourcesCache",
-      "C:\\Users\\jugur\\AppData\\Local\\Symbols\\src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\jugur\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\jugur\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\jugur\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.2.5f1\Editor\Unity.exe" />
@@ -124,6 +112,9 @@
       <workItem from="1678335142528" duration="785000" />
       <workItem from="1681795862522" duration="6994000" />
       <workItem from="1681901033504" duration="1474000" />
+      <workItem from="1681927707589" duration="5257000" />
+      <workItem from="1681939251523" duration="490000" />
+      <workItem from="1681944341326" duration="2032000" />
     </task>
     <servers />
   </component>

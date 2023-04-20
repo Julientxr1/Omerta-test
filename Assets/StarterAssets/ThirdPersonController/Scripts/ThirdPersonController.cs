@@ -28,6 +28,8 @@ namespace StarterAssets
         [Tooltip("Acceleration and deceleration")]
         public float SpeedChangeRate = 10.0f;
 
+        public float sensitivity = 1f;
+
         public AudioClip LandingAudioClip;
         public AudioClip[] FootstepAudioClips;
         [Range(0, 1)] public float FootstepAudioVolume = 0.5f;
@@ -101,6 +103,7 @@ namespace StarterAssets
 #if ENABLE_INPUT_SYSTEM 
         private PlayerInput _playerInput;
 #endif
+        private bool _rotateOnMove = true;
         private Animator _animator;
         private CharacterController _controller;
         private StarterAssetsInputs _input;
@@ -198,8 +201,8 @@ namespace StarterAssets
                 //Don't multiply mouse input by Time.deltaTime;
                 float deltaTimeMultiplier = IsCurrentDeviceMouse ? 1.0f : Time.deltaTime;
 
-                _cinemachineTargetYaw += _input.look.x * deltaTimeMultiplier;
-                _cinemachineTargetPitch += _input.look.y * deltaTimeMultiplier;
+                _cinemachineTargetYaw += _input.look.x * deltaTimeMultiplier* sensitivity;
+                _cinemachineTargetPitch += _input.look.y * deltaTimeMultiplier*sensitivity;
             }
 
             // clamp our rotations so our values are limited 360 degrees
@@ -261,7 +264,12 @@ namespace StarterAssets
                     RotationSmoothTime);
 
                 // rotate to face input direction relative to camera position
-                transform.rotation = Quaternion.Euler(0.0f, rotation, 0.0f);
+                if (_rotateOnMove)
+                {
+                    transform.rotation = Quaternion.Euler(0.0f, rotation, 0.0f);
+                }
+
+                
             }
 
 
@@ -387,6 +395,16 @@ namespace StarterAssets
             {
                 AudioSource.PlayClipAtPoint(LandingAudioClip, transform.TransformPoint(_controller.center), FootstepAudioVolume);
             }
+        }
+
+        public void setsentivity(float Sensitivity)
+        {
+            sensitivity = Sensitivity;
+        }
+
+        public void setRotateOnMove(bool rotateonmove)
+        {
+            _rotateOnMove = rotateonmove;
         }
     }
 }
