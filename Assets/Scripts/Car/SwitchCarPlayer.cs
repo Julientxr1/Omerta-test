@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Cinemachine;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SocialPlatforms;
 using UnityEngine.UI;
@@ -12,6 +13,8 @@ public class SwitchCarPlayer : MonoBehaviour
     public Text text;
     public GameObject Player;
     public GameObject Car;
+    public GameObject Camera;
+    public GameObject CameraCar;
     // Start is called before the first frame update
     void OnTriggerEnter (Collider collider)
     {
@@ -41,11 +44,15 @@ public class SwitchCarPlayer : MonoBehaviour
             {
                 text.enabled = false;
                 Player.SetActive(false);
+                Camera.SetActive(false);
+                CameraCar.SetActive(true);
                 Car.GetComponent<CarController>().enabled = true;
             }
             else
             {
                 Player.SetActive(true);
+                Camera.SetActive(true);
+                CameraCar.SetActive(false);
                 Player.transform.position = Car.transform.position - (Vector3.right * 3);
                 Car.GetComponent<CarController>().enabled = false;
             }
