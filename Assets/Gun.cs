@@ -13,7 +13,7 @@ public class Gun : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetButtonDown("Fire1"))
         {
             var bullet = Instantiate(bulletprefab, bulletspawn.position, bulletspawn.rotation);
             bullet.GetComponent<Rigidbody>().velocity = bulletspawn.forward * speed;

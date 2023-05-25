@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4702fa05-6f0f-49b1-bd31-4bc6c6549117" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Assets/Gun.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Gun.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Car/SwitchCarPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Car/SwitchCarPlayer.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
