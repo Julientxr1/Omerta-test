@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -17,9 +18,8 @@ namespace TestIA
         public LayerMask whatIsGround, whatIsPlayer;
 
         //Patroling
-        public Vector3 walkPoint;
-        public bool walkPointSet;
-        public float walkPointRange;
+        public List<GameObject> points;
+        public int current = 0;
 
         //Attack Player
         public float timeBetweenAttacks;
@@ -49,44 +49,24 @@ namespace TestIA
                 //Check if Player in attackrange
                 playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
 
-                if (!playerInSightRange && !playerInAttackRange) Patroling();
+                if (!playerInSightRange && !playerInAttackRange) Patrol();
                 if (playerInSightRange && !playerInAttackRange) ChasePlayer();
                 if (playerInAttackRange && playerInSightRange) AttackPlayer();
             }
         }
 
-        private void Patroling()
+
+        public void Patrol()
         {
-            if (isDead) return;
-
-            if (!walkPointSet) SearchWalkPoint();
-
-            //Calculate direction and walk to Point
-            if (walkPointSet){
-                agent.SetDestination(walkPoint);
-
-                //Vector3 direction = walkPoint - transform.position;
-                //transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(direction), 0.15f);
+            if (Vector3.Distance(transform.position, points[current].transform.position) > 5)
+            {
+                agent.SetDestination(points[current].transform.position);
             }
-
-            //Calculates DistanceToWalkPoint
-            Vector3 distanceToWalkPoint = transform.position - walkPoint;
-
-            //Walkpoint reached
-            if (distanceToWalkPoint.magnitude < 1f)
-                walkPointSet = false;
-
-            GetComponent<MeshRenderer>().material = green;
-        }
-        private void SearchWalkPoint()
-        {
-            float randomZ = Random.Range(-walkPointRange, walkPointRange);
-            float randomX = Random.Range(-walkPointRange, walkPointRange);
-
-            walkPoint = new Vector3(transform.position.x + randomX, transform.position.y, transform.position.z + randomZ);
-
-            if (Physics.Raycast(walkPoint,-transform.up, 2,whatIsGround))
-                walkPointSet = true;
+            else
+            {
+                current = (current + 1) % points.Count;
+                agent.SetDestination(points[current].transform.position);
+            }
         }
         private void ChasePlayer()
         {

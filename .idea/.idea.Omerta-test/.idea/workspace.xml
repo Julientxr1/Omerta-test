@@ -2,12 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4702fa05-6f0f-49b1-bd31-4bc6c6549117" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Omerta-test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Omerta-test/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gun.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Gun.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/JMO Assets/Capsule.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/JMO Assets/Capsule.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Multiplayer.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Multiplayer.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Sample.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Sample.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.Projet S2/.idea/indexLayout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.Projet S2/.idea/projectSettingsUpdater.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.Projet S2/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.Projet S2/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/TestIA/Enemy AI.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NZ PT-9M Pistol/RenderPipline/3D.unitypackage.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TestIA/Enemy AI.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NZ PT-9M Pistol/RenderPipline/Hdrp.unitypackage.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NZ PT-9M Pistol/RenderPipline/Urp.unitypackage.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TestIA/Projectile 4.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TestIA/Projectile 4.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TestIA/ShootingAI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TestIA/ShootingAI.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" afterDir="false" />
     </list>
@@ -132,6 +136,7 @@
       <workItem from="1684936690693" duration="3525000" />
       <workItem from="1685020867861" duration="370000" />
       <workItem from="1685266567254" duration="931000" />
+      <workItem from="1685267680675" duration="200000" />
     </task>
     <servers />
   </component>
