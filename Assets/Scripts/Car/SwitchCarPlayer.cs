@@ -53,7 +53,7 @@ public class SwitchCarPlayer : MonoBehaviour
                 Player.SetActive(true);
                 Camera.SetActive(true);
                 CameraCar.SetActive(false);
-                Player.transform.position = Car.transform.position - (Vector3.right * 3);
+                Player.transform.position = Car.transform.position - (Vector3.right * 5);
                 Car.GetComponent<CarController>().enabled = false;
             }
         }
