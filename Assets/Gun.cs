@@ -7,6 +7,7 @@ public class Gun : MonoBehaviour
     public Transform bulletspawn;
     public GameObject bulletprefab;
     public float speed;
+    public GameObject cross;
     
     
 
@@ -18,5 +19,12 @@ public class Gun : MonoBehaviour
             var bullet = Instantiate(bulletprefab, bulletspawn.position, bulletspawn.rotation);
             bullet.GetComponent<Rigidbody>().velocity = bulletspawn.forward * speed;
         }
+
+        if(Input.GetButtonDown("Fire2"))
+        {
+            cross.SetActive(true);
+        }
+        
+        
     }
 }
