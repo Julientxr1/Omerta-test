@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
@@ -13,6 +14,8 @@ namespace TestIA
 
         //Stats
         public int health;
+        public int maxhealth;
+        [SerializeField] FloatingHealthBar healthBar;
 
         //Check for Ground/Obstacles
         public LayerMask whatIsGround, whatIsPlayer;
@@ -38,7 +41,14 @@ namespace TestIA
         {
             player = GameObject.Find("PlayerArmature").transform;
             agent = GetComponent<NavMeshAgent>();
+            healthBar = GetComponentInChildren<FloatingHealthBar>();
         }
+
+        public void Start()
+        {
+            healthBar.UpdateHealthBar(health, maxhealth);
+        }
+
         private void Update()
         {
             if (!isDead)
@@ -108,7 +118,7 @@ namespace TestIA
         public void TakeDamage(int damage)
         {
             health -= damage;
-
+            healthBar.UpdateHealthBar(health, maxhealth);
             if (health < 0){
                 isDead = true;
                 Invoke("Destroyy", 2.8f);
