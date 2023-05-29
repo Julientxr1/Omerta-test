@@ -101,7 +101,7 @@ namespace TestIA
                 Rigidbody rb = Instantiate(projectile, transform.position, Quaternion.identity).GetComponent<Rigidbody>();
 
                 rb.AddForce(transform.forward * 32f, ForceMode.Impulse);
-                rb.AddForce(transform.up * 3, ForceMode.Impulse);
+                rb.AddForce(transform.up * 4, ForceMode.Impulse);
 
                 alreadyAttacked = true;
                 Invoke("ResetAttack", timeBetweenAttacks);
