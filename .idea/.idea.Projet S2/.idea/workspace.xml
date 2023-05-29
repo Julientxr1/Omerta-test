@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="7ceff220-14f4-49b0-9886-b615d42775a9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Projet S2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Projet S2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TestIA/Enemy AI.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TestIA/Enemy AI.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Sample 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Sample 1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestIA.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TestIA.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/TestIA/ShootingAI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TestIA/ShootingAI.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
@@ -92,6 +93,7 @@
       <workItem from="1685146721281" duration="1601000" />
       <workItem from="1685314744681" duration="99000" />
       <workItem from="1685359201788" duration="2103000" />
+      <workItem from="1685387237683" duration="716000" />
     </task>
     <servers />
   </component>
