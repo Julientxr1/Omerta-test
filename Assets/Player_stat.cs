@@ -7,11 +7,11 @@ public class Player_stat : MonoBehaviour
     [SerializeField] private float maxhealth = 100f;
     [SerializeField] private float currenthealth;
     [SerializeField] private Image Healthbarfill;
-    public Animator Animator;
+    
     void Awake()
     {
         currenthealth = maxhealth;
-        Animator = GetComponent<Animator>();
+        
     }
 
     // Update is called once per frame
@@ -24,7 +24,7 @@ public class Player_stat : MonoBehaviour
 
         if (currenthealth<=0)
         {
-            Animator.SetBool("IsDead",true);
+            Destroy(gameObject);
         }
 
         
