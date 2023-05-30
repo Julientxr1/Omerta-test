@@ -25,6 +25,7 @@ public class Mission1v2 : MonoBehaviour
         {
             MissionOne();
         }
+
     }
 
     private void OnTriggerEnter(Collider other) 

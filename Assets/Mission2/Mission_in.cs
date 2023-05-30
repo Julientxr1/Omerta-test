@@ -9,14 +9,17 @@ public class Mission_in : MonoBehaviour
     public string tag;
     public GameObject Select;
     public GameObject changescene;
-    
-    
+    public GameObject finish;
+
+
     void Start()
     {
+        finish.SetActive(false);
         changescene.SetActive(false);
         Select.SetActive(true);
         doc.Doc = false;
     }
+    
     
 
     private void OnTriggerEnter(Collider other)
@@ -24,9 +27,9 @@ public class Mission_in : MonoBehaviour
         if (other.gameObject.tag == tag)
         {
             doc.Doc = true;
+            finish.SetActive(true);
             Select.SetActive(false);
             changescene.SetActive(true);
-            Debug.Log("touch");
         }
     }
     

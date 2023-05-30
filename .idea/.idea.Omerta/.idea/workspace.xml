@@ -3,12 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="669974a7-df02-4744-a66c-e48dee4baf9b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Omerta/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Omerta/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mission1/Scripts/Mission1 v2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Mission1/Scripts/Mission1 v2.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mission2/Mission_in.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Mission2/Mission_in.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NZ PT-9M Pistol/RenderPipline/3D.unitypackage.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NZ PT-9M Pistol/RenderPipline/Hdrp.unitypackage.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NZ PT-9M Pistol/RenderPipline/Urp.unitypackage.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Sample 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Sample 1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Sample.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Sample.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Car/SwitchCarPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Car/SwitchCarPlayer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,9 +20,10 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Mission1/Scripts/Mission.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Mission2/Mission2_script.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Mission2/canvas.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Player/prog/CheckCamera.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Car/test.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -86,6 +91,7 @@
       <workItem from="1681994462624" duration="3543000" />
       <workItem from="1685268931959" duration="1323000" />
       <workItem from="1685308172677" duration="1682000" />
+      <workItem from="1685428082055" duration="2271000" />
     </task>
     <servers />
   </component>

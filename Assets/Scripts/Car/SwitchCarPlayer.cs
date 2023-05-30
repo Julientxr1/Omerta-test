@@ -9,7 +9,8 @@ using UnityEngine.UI;
 public class SwitchCarPlayer : MonoBehaviour
 {
 
-    private bool useCar = false;
+    public bool useCar = false;
+    private bool Car2 = false;
     public Text text;
     public GameObject Player;
     public GameObject Car;
@@ -22,6 +23,7 @@ public class SwitchCarPlayer : MonoBehaviour
         {
             text.enabled = true;
             Debug.Log("touch");
+            Car2 = true;
         }
     }
     
@@ -31,6 +33,7 @@ public class SwitchCarPlayer : MonoBehaviour
         {
             text.enabled = false;
             Debug.Log("out");
+            Car2 = false;
         }
     }
 
@@ -42,19 +45,27 @@ public class SwitchCarPlayer : MonoBehaviour
             useCar =! useCar;
             if (useCar)
             {
-                text.enabled = false;
-                Player.SetActive(false);
-                Camera.SetActive(false);
-                CameraCar.SetActive(true);
-                Car.GetComponent<CarController>().enabled = true;
+                if (Car2)
+                {
+                    text.enabled = false;
+                    Player.SetActive(false);
+                    Camera.SetActive(false);
+                    CameraCar.SetActive(true);
+                    Car.GetComponent<CarController>().enabled = true;
+                }
             }
             else
             {
-                Player.SetActive(true);
-                Camera.SetActive(true);
-                CameraCar.SetActive(false);
-                Player.transform.position = Car.transform.position - (Vector3.right * 5);
-                Car.GetComponent<CarController>().enabled = false;
+                if (Car2)
+                {
+                    Car2 = false;
+                    Player.SetActive(true);
+                    Camera.SetActive(true);
+                    CameraCar.SetActive(false);
+                    Player.transform.position = Car.transform.position - (Vector3.right * 5);
+                    Debug.Log(Car.transform.position);
+                    Car.GetComponent<CarController>().enabled = false;
+                }
             }
         }
     }
