@@ -1,23 +1,25 @@
-using System;
+ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Bulletprojectile : MonoBehaviour
 {
-    public float life = 3f;
-    
-    void Awake()
-    {
-        Destroy(gameObject,life);
-        
+    public float life = 100f;
 
+    private void Update()
+    {
+        
     }
-    
+
 
     private void OnCollisionEnter(Collision collision)
     {
-        Destroy(collision.gameObject);
-        Destroy(gameObject);
+        if (collision.transform.tag == "Enemy")
+        {
+            Destroy(collision.gameObject);
+        }
+
+        
     }
 }

@@ -51,6 +51,7 @@ namespace TestIA
 
         private void Update()
         {
+            isdead();
             if (!isDead)
             {
                 //Check if Player in sightrange
@@ -62,6 +63,10 @@ namespace TestIA
                 if (!playerInSightRange && !playerInAttackRange) Patrol();
                 if (playerInSightRange && !playerInAttackRange) ChasePlayer();
                 if (playerInAttackRange && playerInSightRange) AttackPlayer();
+            }
+            else
+            {
+                Destroyy();
             }
         }
 
@@ -135,6 +140,31 @@ namespace TestIA
             Gizmos.DrawWireSphere(transform.position, attackRange);
             Gizmos.color = Color.yellow;
             Gizmos.DrawWireSphere(transform.position, sightRange);
+        }
+
+        private void isdead()
+        {
+            if (health<=0)
+            {
+                isDead = true;
+            }
+            else
+            {
+                isDead = false;
+            }
+        }
+
+        private void takingdamage(int dmg)
+        {
+            health -= dmg;
+        }
+
+        public void OnTriggerEnter(Collider other)
+        {
+            if (other.transform.tag=="Bullet")
+            {
+                takingdamage(25);
+            }
         }
     }
 }

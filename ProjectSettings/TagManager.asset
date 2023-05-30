@@ -6,6 +6,8 @@ TagManager:
   tags:
   - CinemachineTarget
   - Car
+  - Bullet
+  - Enemy
   layers:
   - Default
   - TransparentFX

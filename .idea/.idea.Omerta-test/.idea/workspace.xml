@@ -3,14 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="4702fa05-6f0f-49b1-bd31-4bc6c6549117" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Omerta-test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Omerta-test/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Mission2/Material/Cylinder.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Mission2/Material/Cylinder.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Mission2/Mission2_script.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Mission2/Mission2_script.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Mission2.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Mission2.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Multiplayer/Resources/Ch33_nonPBR Variant.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Multiplayer/Resources/Ch33_nonPBR Variant.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NZ PT-9M Pistol/Capsule.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NZ PT-9M Pistol/Capsule.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Nouveau/Scripts/AimStates/Bullet projectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Nouveau/Scripts/AimStates/Bullet projectile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Sample 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Sample 1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Sample.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Sample.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TestIA/ShootingAI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TestIA/ShootingAI.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,6 +24,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Mission2/Mission2_end.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Mission2/Mission_in.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Mission2/SwitchScene_v2.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/shooting.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -141,6 +144,7 @@
       <workItem from="1685266567254" duration="931000" />
       <workItem from="1685267680675" duration="200000" />
       <workItem from="1685377219794" duration="6513000" />
+      <workItem from="1685396153786" duration="5671000" />
     </task>
     <servers />
   </component>
