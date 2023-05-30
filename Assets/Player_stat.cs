@@ -4,9 +4,9 @@ using UnityEngine;
 using UnityEngine.UI;
 public class Player_stat : MonoBehaviour
 {
-    [SerializeField] private float maxhealth = 100f;
-    [SerializeField] private float currenthealth;
-    [SerializeField] private Image Healthbarfill;
+    [SerializeField] public  float maxhealth = 100f;
+    [SerializeField] public  float currenthealth;
+    [SerializeField] public  Image Healthbarfill;
     
     void Awake()
     {
@@ -17,7 +17,7 @@ public class Player_stat : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Q))
+        if (Input.GetKeyDown(KeyCode.M))
         {
             TakeDamage(15);
         }
@@ -30,14 +30,14 @@ public class Player_stat : MonoBehaviour
         
     }
 
-    void TakeDamage(float dmg)
+    public  void TakeDamage(float dmg)
     {
         currenthealth -= dmg;
         updatefill();
         
     }
 
-    void updatefill()
+    public void updatefill()
     {
         Healthbarfill.fillAmount = currenthealth / maxhealth;
     }

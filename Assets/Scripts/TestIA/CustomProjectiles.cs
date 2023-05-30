@@ -15,6 +15,7 @@ namespace TestIA
     public class CustomProjectiles : MonoBehaviour
     {
         public bool activated;
+        public Player_stat playerStat;
 
         [Header("Please attatch components:")]
         public Rigidbody rb;
@@ -319,6 +320,11 @@ namespace TestIA
 
             //Count up collisions
             collisions++;
+            if(collision.transform.CompareTag("Player"))
+            {
+                playerStat.TakeDamage(5);
+            }
+            Destroy(gameObject);
         }
 
         #region Attribute functions

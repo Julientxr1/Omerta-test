@@ -3,10 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="4702fa05-6f0f-49b1-bd31-4bc6c6549117" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Omerta-test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Omerta-test/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NZ PT-9M Pistol/Capsule.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NZ PT-9M Pistol/Capsule.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Player_stat.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player_stat.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Sample 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Sample 1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TestIA/CustomProjectiles.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TestIA/CustomProjectiles.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/shooting.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/shooting.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,6 +139,7 @@
       <workItem from="1685377219794" duration="6513000" />
       <workItem from="1685396153786" duration="5671000" />
       <workItem from="1685419975920" duration="513000" />
+      <workItem from="1685425081057" duration="2581000" />
     </task>
     <servers />
   </component>
